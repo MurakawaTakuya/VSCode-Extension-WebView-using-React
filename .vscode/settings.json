@@ -17,5 +17,15 @@
     "source.organizeImports": "always"
   },
   "typescript.updateImportsOnFileMove.enabled": "always",
-  "javascript.updateImportsOnFileMove.enabled": "always"
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "css.validate": false,
+  "stylelint.validate": ["css"],
+  "stylelint.configFile": "./packages/webview/.stylelintrc.json",
+  "[css]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.codeActionsOnSave": {
+      "source.fixAll.stylelint": "explicit"
+    }
+  }
 }
