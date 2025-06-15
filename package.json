@@ -12,8 +12,9 @@
     "bundle": "ts-node scripts/bundle.ts",
     "package": "cd out && vsce package && cd ../",
     "pre-launch": "pnpm compile && pnpm bundle",
-    "vscode:prepublish": "pnpm compile && pnpm bundle"
-    ,"format": "prettier --write ."
+    "vscode:prepublish": "pnpm compile && pnpm bundle",
+    "format": "prettier --write .",
+    "dev": "cd packages/webview && pnpm dev"
   },
   "devDependencies": {
     "@types/node": "20.2.5",
