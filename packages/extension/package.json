@@ -15,7 +15,7 @@
     "commands": [
       {
         "command": "myExtension.start",
-        "title": "Start new webview"
+        "title": "Start webview"
       }
     ]
   },

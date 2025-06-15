@@ -13,10 +13,14 @@
     "package": "cd out && vsce package && cd ../",
     "pre-launch": "pnpm compile && pnpm bundle",
     "vscode:prepublish": "pnpm compile && pnpm bundle"
+    ,"format": "prettier --write ."
   },
   "devDependencies": {
     "@types/node": "20.2.5",
     "@vscode/vsce": "^2.19.0",
+    "eslint-config-prettier": "^10.1.5",
+    "eslint-plugin-prettier": "^5.4.1",
+    "prettier": "^3.5.3",
     "ts-node": "^10.9.1",
     "typescript": "^5.1.3"
   },
